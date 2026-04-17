@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.DS_Store
+.secrets/
+*.pyc
+*.pyo
+*.pyd
+
+runs/
+checkpoints/
+tensorboard/

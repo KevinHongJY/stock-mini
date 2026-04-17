@@ -1,0 +1,86 @@
+data:
+  path: data/sample_stock.csv
+  start_date:
+  end_date:
+  date_column: Date
+  close_column: Close
+  open_column: Open
+  high_column: High
+  low_column: Low
+  volume_column: Volume
+
+env:
+  reward: profit
+  window_size: 10
+  trading_period: 24
+  train_split: 0.8
+  initial_capital: 10000.0
+  transaction_cost_bps: 5.0
+  slippage_bps: 1.0
+  buy_fractions: [0.5, 1.0]
+  sell_fractions: [0.5, 1.0]
+  max_positions:
+  max_exposure_ratio: 1.0
+  sell_mode: all
+  invalid_sell_penalty: 0.1
+  blocked_trade_penalty: 0.0
+  min_hold_steps: 0
+  trade_cooldown_steps: 0
+  dynamic_exposure_enabled: false
+  dynamic_exposure_vol_window: 20
+  dynamic_exposure_min_scale: 0.5
+  dynamic_exposure_strength: 1.0
+  min_equity_ratio: 0.2
+  stop_on_bankruptcy: true
+  sr_window: 20
+  sr_clip: 1.0
+  periods_per_year: 252.0
+
+agent:
+  replay_mem_size: 10000
+  batch_size: 16
+  gamma: 0.99
+  eps_start: 1.0
+  eps_end: 0.05
+  eps_steps: 200
+  learning_rate: 0.0005
+  input_dim: 10
+  hidden_dim: 120
+  action_number: 5
+  target_update: 5
+  model: ddqn
+  double: true
+  per_enabled: true
+  per_alpha: 0.6
+  per_beta_start: 0.4
+  per_beta_steps: 1000
+  per_eps: 0.000001
+  n_step: 3
+
+model:
+  type: mlp_dueling
+  hidden_sizes: [64, 64]
+
+train:
+  num_episodes: 4
+  max_steps_per_episode:
+  max_total_steps:
+  log_interval: 1
+  checkpoint_interval: 2
+  eval_epsilon: 0.0
+  resample_train_window_each_episode: false
+  eval_interval: 0
+  eval_episodes: 5
+  eval_seed: 20240101
+
+eval:
+  num_episodes: 5
+  seed: 20240101
+  fixed_windows: true
+  fixed_windows_seed: 20240101
+  epsilon: 0.0
+  save_per_episode: true
+
+run:
+  seed: 42
+  device: auto

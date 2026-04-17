@@ -1,0 +1,72 @@
+# D3QN Stock Mini Project
+
+This repository is a compact course-ready D3QN trading project for a single stock CSV.
+It keeps the D3QN core, a discrete capital-aware trading environment, and simple train/eval entrypoints.
+
+## Project Layout
+
+- `src/d3qn_stock/`: package source code
+- `configs/default.yaml`: default training configuration
+- `data/sample_stock.csv`: de-identified sample stock data
+- `scripts/train.py`: training entrypoint
+- `scripts/eval.py`: evaluation entrypoint
+- `tests/`: unit and smoke-oriented tests
+
+## Setup
+
+```bash
+uv venv .venv
+source .venv/bin/activate
+uv sync
+```
+
+## CSV Format
+
+The default sample file uses:
+
+```text
+Date,Open,High,Low,Close,Volume
+```
+
+The loader also supports custom column names through the YAML config:
+
+- `data.date_column`
+- `data.close_column`
+- optional `data.open_column`
+- optional `data.high_column`
+- optional `data.low_column`
+- optional `data.volume_column`
+
+## Train
+
+```bash
+./.venv/bin/python scripts/train.py --config configs/default.yaml
+```
+
+Expected outputs under `runs/<run_name>/`:
+
+- `metrics.csv`
+- `config_resolved.yaml`
+- `checkpoints/checkpoint_latest.pt`
+- `run.log`
+
+## Evaluate
+
+```bash
+./.venv/bin/python scripts/eval.py \
+  --config configs/default.yaml \
+  --checkpoint runs/<run_name>/checkpoints/checkpoint_latest.pt \
+  --output-dir runs/<run_name>/eval
+```
+
+Expected evaluation outputs:
+
+- `eval_summary.json`
+- `eval_metrics.csv`
+- `eval.log`
+
+## Notes
+
+- The repository is intentionally limited to one stock CSV per run.
+- The default action template uses five actions: hold, buy 50%, buy 100%, sell 50%, sell 100%.
+- Reward options are `profit`, `sr`, and `sr_enhanced`. The default config uses `profit`.
