@@ -1,0 +1,25 @@
+2026-04-17 13:44:20 | INFO | Training Dueling DDQN with seed 7
+2026-04-17 13:44:25 | INFO | Finished Dueling DDQN seed 7 | mean_return_rate 0.1133 | annualized_sharpe 12.2523
+2026-04-17 13:44:25 | INFO | Training Dueling DDQN with seed 21
+2026-04-17 13:44:29 | INFO | Finished Dueling DDQN seed 21 | mean_return_rate 0.1879 | annualized_sharpe 17.0391
+2026-04-17 13:44:29 | INFO | Training Dueling DDQN with seed 42
+2026-04-17 13:44:34 | INFO | Finished Dueling DDQN seed 42 | mean_return_rate 0.0103 | annualized_sharpe 2.5479
+2026-04-17 13:44:34 | INFO | Training Noisy Full (sigma=0.5) with seed 7
+2026-04-17 13:44:42 | INFO | Finished Noisy Full (sigma=0.5) seed 7 | mean_return_rate 0.2403 | annualized_sharpe 18.3576
+2026-04-17 13:44:42 | INFO | Training Noisy Full (sigma=0.5) with seed 21
+2026-04-17 13:44:50 | INFO | Finished Noisy Full (sigma=0.5) seed 21 | mean_return_rate 0.1705 | annualized_sharpe 12.2370
+2026-04-17 13:44:50 | INFO | Training Noisy Full (sigma=0.5) with seed 42
+2026-04-17 13:44:58 | INFO | Finished Noisy Full (sigma=0.5) seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 13:44:58 | INFO | Training Noisy Head (sigma=0.1) with seed 7
+2026-04-17 13:45:05 | INFO | Finished Noisy Head (sigma=0.1) seed 7 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 13:45:05 | INFO | Training Noisy Head (sigma=0.1) with seed 21
+2026-04-17 13:45:12 | INFO | Finished Noisy Head (sigma=0.1) seed 21 | mean_return_rate 0.1109 | annualized_sharpe 8.6237
+2026-04-17 13:45:12 | INFO | Training Noisy Head (sigma=0.1) with seed 42
+2026-04-17 13:45:18 | INFO | Finished Noisy Head (sigma=0.1) seed 42 | mean_return_rate 0.0330 | annualized_sharpe 6.0825
+2026-04-17 13:45:18 | INFO | Training Noisy Head (sigma=0.2) with seed 7
+2026-04-17 13:45:25 | INFO | Finished Noisy Head (sigma=0.2) seed 7 | mean_return_rate 0.0727 | annualized_sharpe 4.4065
+2026-04-17 13:45:25 | INFO | Training Noisy Head (sigma=0.2) with seed 21
+2026-04-17 13:45:32 | INFO | Finished Noisy Head (sigma=0.2) seed 21 | mean_return_rate 0.2404 | annualized_sharpe 18.3621
+2026-04-17 13:45:32 | INFO | Training Noisy Head (sigma=0.2) with seed 42
+2026-04-17 13:45:39 | INFO | Finished Noisy Head (sigma=0.2) seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 13:45:39 | INFO | Ablation results written to results/noisy_tuning

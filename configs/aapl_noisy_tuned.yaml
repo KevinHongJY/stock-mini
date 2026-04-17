@@ -1,5 +1,5 @@
 data:
-  path: data/sample_stock.csv
+  path: data/aapl_daily.csv
   start_date:
   end_date:
   date_column: Date
@@ -38,31 +38,31 @@ env:
 
 agent:
   replay_mem_size: 10000
-  batch_size: 16
+  batch_size: 32
   gamma: 0.99
   eps_start: 1.0
   eps_end: 0.05
   eps_steps: 200
-  learning_rate: 0.0005
+  learning_rate: 0.00025
   input_dim: 10
   hidden_dim: 120
   action_number: 5
-  target_update: 5
+  target_update: 10
   model: ddqn
   double: true
-  per_enabled: true
+  per_enabled: false
   per_alpha: 0.6
   per_beta_start: 0.4
   per_beta_steps: 1000
   per_eps: 0.000001
-  n_step: 3
+  n_step: 1
 
 model:
   type: mlp_dueling
   hidden_sizes: [64, 64]
-  use_noisy: false
-  noisy_sigma_init: 0.5
-  noisy_head_only: false
+  use_noisy: true
+  noisy_sigma_init: 0.2
+  noisy_head_only: true
 
 train:
   num_episodes: 4

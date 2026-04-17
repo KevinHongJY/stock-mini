@@ -1,0 +1,61 @@
+variant,label,episode,mean_reward_return
+d3qn_per_nstep,D3QN + PER + 3-step,1,-34.866666689515114
+d3qn_per_nstep,D3QN + PER + 3-step,2,7.39999998609225
+d3qn_per_nstep,D3QN + PER + 3-step,3,10.866666629910469
+d3qn_per_nstep,D3QN + PER + 3-step,4,6.899999978641669
+d3qn_per_nstep,D3QN + PER + 3-step,5,-10.966666681071123
+d3qn_per_nstep,D3QN + PER + 3-step,6,12.466666653752327
+d3qn_per_nstep,D3QN + PER + 3-step,7,0.3333333134651184
+d3qn_per_nstep,D3QN + PER + 3-step,8,15.699999985595545
+d3qn_per_nstep,D3QN + PER + 3-step,9,59.666666661699615
+d3qn_per_nstep,D3QN + PER + 3-step,10,91.13333330055077
+d3qn_per_nstep,D3QN + PER + 3-step,11,173.99999998509884
+d3qn_per_nstep,D3QN + PER + 3-step,12,61.43333330502113
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,1,-13.500000002483526
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,2,-26.80000000198682
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,3,4.966666666169961
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,4,3.2999999995032945
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,5,-8.333333333333334
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,6,33.333333333333336
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,7,73.33333333333333
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,8,59.69999999552965
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,9,-8.333333333333334
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,10,117.96666666120291
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,11,9.866666664679846
+d3qn_per_nstep_noisy,D3QN + PER + 3-step + Noisy,12,104.96666666616996
+ddqn,Double DQN,1,-34.63333340237538
+ddqn,Double DQN,2,-51.20000004271666
+ddqn,Double DQN,3,0.8666665802399317
+ddqn,Double DQN,4,-15.200000077486038
+ddqn,Double DQN,5,-10.533333390951157
+ddqn,Double DQN,6,-1.6000000983476639
+ddqn,Double DQN,7,-19.90000007301569
+ddqn,Double DQN,8,16.93333326280117
+ddqn,Double DQN,9,6.899999904135863
+ddqn,Double DQN,10,-7.466666728258133
+ddqn,Double DQN,11,-3.666666770974796
+ddqn,Double DQN,12,3.3666665678222976
+dqn,DQN,1,-46.30000006904205
+dqn,DQN,2,49.46666658421358
+dqn,DQN,3,57.1333332657814
+dqn,DQN,4,110.53333329161008
+dqn,DQN,5,81.76666659365098
+dqn,DQN,6,124.33333327372868
+dqn,DQN,7,72.83333322654168
+dqn,DQN,8,104.26666658123334
+dqn,DQN,9,46.63333325833082
+dqn,DQN,10,124.4333332752188
+dqn,DQN,11,142.2999999349316
+dqn,DQN,12,103.16666656484206
+dueling_ddqn,Dueling DDQN,1,-22.26666675011317
+dueling_ddqn,Dueling DDQN,2,-3.233333431184292
+dueling_ddqn,Dueling DDQN,3,57.59999991456667
+dueling_ddqn,Dueling DDQN,4,95.23333328713973
+dueling_ddqn,Dueling DDQN,5,53.83333324144284
+dueling_ddqn,Dueling DDQN,6,-3.366666741669178
+dueling_ddqn,Dueling DDQN,7,117.83333325137694
+dueling_ddqn,Dueling DDQN,8,57.899999943872295
+dueling_ddqn,Dueling DDQN,9,164.19999993840852
+dueling_ddqn,Dueling DDQN,10,92.86666658520699
+dueling_ddqn,Dueling DDQN,11,152.99999992052713
+dueling_ddqn,Dueling DDQN,12,178.96666662643352

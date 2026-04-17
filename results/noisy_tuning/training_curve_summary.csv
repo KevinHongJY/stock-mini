@@ -1,0 +1,49 @@
+variant,label,episode,mean_reward_return
+dueling_ddqn,Dueling DDQN,1,-22.26666675011317
+dueling_ddqn,Dueling DDQN,2,-3.233333431184292
+dueling_ddqn,Dueling DDQN,3,57.59999991456667
+dueling_ddqn,Dueling DDQN,4,95.23333328713973
+dueling_ddqn,Dueling DDQN,5,53.83333324144284
+dueling_ddqn,Dueling DDQN,6,-3.366666741669178
+dueling_ddqn,Dueling DDQN,7,117.83333325137694
+dueling_ddqn,Dueling DDQN,8,57.899999943872295
+dueling_ddqn,Dueling DDQN,9,164.19999993840852
+dueling_ddqn,Dueling DDQN,10,92.86666658520699
+dueling_ddqn,Dueling DDQN,11,152.99999992052713
+dueling_ddqn,Dueling DDQN,12,178.96666662643352
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),1,-13.633333337803682
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),2,-10.166666669150194
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),3,8.066666662693024
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),4,19.633333327869575
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),5,8.266666665673256
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),6,21.166666659216087
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),7,12.866666659712791
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),8,62.799999992052726
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),9,89.7999999721845
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),10,26.09999994188547
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),11,-2.7000000899036727
+dueling_noisy_full_sigma05,Noisy Full (sigma=0.5),12,23.333333283662796
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),1,-35.93333349625269
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),2,-24.26666680475076
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),3,-9.866666788856188
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),4,-6.600000123182933
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),5,-5.066666816671689
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),6,-24.900000147521496
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),7,-5.56666682412227
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),8,-8.200000122189522
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),9,-21.366666836043198
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),10,-17.70000013957421
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),11,-6.433333454032739
+dueling_noisy_head_sigma01,Noisy Head (sigma=0.1),12,-8.066666786869368
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),1,-42.16666674862305
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),2,-5.166666718820731
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),3,2.133333290616671
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),4,-2.133333389957746
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),5,-5.133333384990692
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),6,7.966666636367639
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),7,-1.8666667193174362
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),8,23.266666640837986
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),9,113.99999998509884
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),10,161.39999997119108
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),11,100.96666663140059
+dueling_noisy_head_sigma02,Noisy Head (sigma=0.2),12,-8.86666669944922

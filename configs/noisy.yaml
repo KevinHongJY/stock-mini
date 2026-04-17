@@ -60,7 +60,7 @@ agent:
 model:
   type: mlp_dueling
   hidden_sizes: [64, 64]
-  use_noisy: false
+  use_noisy: true
   noisy_sigma_init: 0.5
   noisy_head_only: false
 

@@ -123,6 +123,9 @@ class RunConfig:
 class ModelConfig:
     type: str = "mlp_dueling"
     hidden_sizes: list[int] = field(default_factory=lambda: [64, 64])
+    use_noisy: bool = False
+    noisy_sigma_init: float = 0.5
+    noisy_head_only: bool = False
 
 
 @dataclass
@@ -219,6 +222,9 @@ def build_agent(config: Config, device: str, input_dim: Optional[int] = None) ->
         per_beta_steps=config.agent.per_beta_steps,
         per_eps=config.agent.per_eps,
         n_step=config.agent.n_step,
+        use_noisy=config.model.use_noisy,
+        noisy_sigma_init=config.model.noisy_sigma_init,
+        noisy_head_only=config.model.noisy_head_only,
         device=device,
     )
 

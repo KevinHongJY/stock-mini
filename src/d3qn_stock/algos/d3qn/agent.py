@@ -37,6 +37,9 @@ class D3QNAgent:
         per_beta_steps: int = 100000,
         per_eps: float = 1e-6,
         n_step: int = 1,
+        use_noisy: bool = False,
+        noisy_sigma_init: float = 0.5,
+        noisy_head_only: bool = False,
         device: str = "auto",
     ) -> None:
         if n_step < 1:
@@ -63,6 +66,9 @@ class D3QNAgent:
         self.per_eps = per_eps
         self.n_step = int(n_step)
         self.n_step_discount = self.gamma ** self.n_step
+        self.use_noisy = use_noisy
+        self.noisy_sigma_init = noisy_sigma_init
+        self.noisy_head_only = noisy_head_only
         self.training = True
 
         self.device = (
@@ -76,12 +82,18 @@ class D3QNAgent:
             self.input_dim,
             self.action_number,
             hidden_sizes=self.hidden_sizes,
+            use_noisy=self.use_noisy,
+            noisy_sigma_init=self.noisy_sigma_init,
+            noisy_head_only=self.noisy_head_only,
         ).to(self.device)
         self.target_net = build_q_network(
             self.model,
             self.input_dim,
             self.action_number,
             hidden_sizes=self.hidden_sizes,
+            use_noisy=self.use_noisy,
+            noisy_sigma_init=self.noisy_sigma_init,
+            noisy_head_only=self.noisy_head_only,
         ).to(self.device)
         self.target_net.load_state_dict(self.policy_net.state_dict())
         self.target_net.eval()
@@ -96,6 +108,10 @@ class D3QNAgent:
         self.steps_done = 0
         self.optimize_steps = 0
         self.last_epsilon = self.eps_start
+
+    def _reset_policy_noise(self) -> None:
+        if hasattr(self.policy_net, "reset_noise"):
+            self.policy_net.reset_noise()
 
     def _as_tensor(self, value: Optional[torch.Tensor | np.ndarray]) -> Optional[torch.Tensor]:
         if value is None:
@@ -122,6 +138,8 @@ class D3QNAgent:
     def reset_episode(self) -> None:
         if self.n_step > 1 and self.n_step_buffer:
             self.finalize_episode(force_terminal=False)
+        if self.use_noisy:
+            self._reset_policy_noise()
 
     def select_action(
         self,
@@ -136,6 +154,16 @@ class D3QNAgent:
             state = state.unsqueeze(0)
         if state.dim() == 2:
             state = state.unsqueeze(1)
+        if self.use_noisy:
+            self.last_epsilon = 0.0
+            self.steps_done += 1
+            if training:
+                self.policy_net.train()
+                self._reset_policy_noise()
+            else:
+                self.policy_net.eval()
+            with torch.no_grad():
+                return torch.tensor([self.policy_net(state).argmax()], device=self.device, dtype=torch.long)
         sample = random.random()
         if epsilon_override is not None:
             eps_threshold = epsilon_override
@@ -216,6 +244,9 @@ class D3QNAgent:
     def _optimize_impl(self, use_double_dqn: bool) -> Optional[Tuple[float, float]]:
         if len(self.memory) < self.batch_size:
             return None
+        if self.use_noisy:
+            self.policy_net.train()
+            self._reset_policy_noise()
 
         per_indices = None
         per_weights = torch.ones((self.batch_size, 1), device=self.device, dtype=torch.float32)

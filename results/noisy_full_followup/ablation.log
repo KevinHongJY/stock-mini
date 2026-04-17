@@ -1,0 +1,25 @@
+2026-04-17 14:36:51 | INFO | Training Dueling DDQN with seed 7
+2026-04-17 14:36:58 | INFO | Finished Dueling DDQN seed 7 | mean_return_rate 0.1133 | annualized_sharpe 12.2523
+2026-04-17 14:36:58 | INFO | Training Dueling DDQN with seed 21
+2026-04-17 14:37:03 | INFO | Finished Dueling DDQN seed 21 | mean_return_rate 0.1879 | annualized_sharpe 17.0391
+2026-04-17 14:37:03 | INFO | Training Dueling DDQN with seed 42
+2026-04-17 14:37:09 | INFO | Finished Dueling DDQN seed 42 | mean_return_rate 0.0103 | annualized_sharpe 2.5479
+2026-04-17 14:37:09 | INFO | Training Noisy Full (sigma=0.5, lr=0.0005) with seed 7
+2026-04-17 14:37:19 | INFO | Finished Noisy Full (sigma=0.5, lr=0.0005) seed 7 | mean_return_rate 0.2403 | annualized_sharpe 18.3576
+2026-04-17 14:37:19 | INFO | Training Noisy Full (sigma=0.5, lr=0.0005) with seed 21
+2026-04-17 14:37:28 | INFO | Finished Noisy Full (sigma=0.5, lr=0.0005) seed 21 | mean_return_rate 0.1705 | annualized_sharpe 12.2370
+2026-04-17 14:37:28 | INFO | Training Noisy Full (sigma=0.5, lr=0.0005) with seed 42
+2026-04-17 14:37:38 | INFO | Finished Noisy Full (sigma=0.5, lr=0.0005) seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 14:37:38 | INFO | Training Noisy Full (sigma=0.5, lr=0.00025) with seed 7
+2026-04-17 14:37:48 | INFO | Finished Noisy Full (sigma=0.5, lr=0.00025) seed 7 | mean_return_rate 0.1206 | annualized_sharpe 9.7705
+2026-04-17 14:37:48 | INFO | Training Noisy Full (sigma=0.5, lr=0.00025) with seed 21
+2026-04-17 14:37:58 | INFO | Finished Noisy Full (sigma=0.5, lr=0.00025) seed 21 | mean_return_rate 0.1021 | annualized_sharpe 7.8956
+2026-04-17 14:37:58 | INFO | Training Noisy Full (sigma=0.5, lr=0.00025) with seed 42
+2026-04-17 14:38:08 | INFO | Finished Noisy Full (sigma=0.5, lr=0.00025) seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 14:38:08 | INFO | Training Noisy Full (sigma=0.3, lr=0.00025) with seed 7
+2026-04-17 14:38:18 | INFO | Finished Noisy Full (sigma=0.3, lr=0.00025) seed 7 | mean_return_rate 0.1004 | annualized_sharpe 7.7707
+2026-04-17 14:38:18 | INFO | Training Noisy Full (sigma=0.3, lr=0.00025) with seed 21
+2026-04-17 14:38:28 | INFO | Finished Noisy Full (sigma=0.3, lr=0.00025) seed 21 | mean_return_rate 0.1114 | annualized_sharpe 8.7162
+2026-04-17 14:38:28 | INFO | Training Noisy Full (sigma=0.3, lr=0.00025) with seed 42
+2026-04-17 14:38:38 | INFO | Finished Noisy Full (sigma=0.3, lr=0.00025) seed 42 | mean_return_rate 0.0203 | annualized_sharpe 6.6312
+2026-04-17 14:38:38 | INFO | Ablation results written to results/noisy_full_followup

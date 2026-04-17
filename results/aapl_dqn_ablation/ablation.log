@@ -1,0 +1,31 @@
+2026-04-17 13:29:41 | INFO | Training DQN with seed 7
+2026-04-17 13:29:44 | INFO | Finished DQN seed 7 | mean_return_rate 0.0018 | annualized_sharpe 6.0859
+2026-04-17 13:29:44 | INFO | Training DQN with seed 21
+2026-04-17 13:29:47 | INFO | Finished DQN seed 21 | mean_return_rate 0.1061 | annualized_sharpe 9.7270
+2026-04-17 13:29:47 | INFO | Training DQN with seed 42
+2026-04-17 13:29:50 | INFO | Finished DQN seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 13:29:50 | INFO | Training Double DQN with seed 7
+2026-04-17 13:29:53 | INFO | Finished Double DQN seed 7 | mean_return_rate 0.0970 | annualized_sharpe 8.8753
+2026-04-17 13:29:53 | INFO | Training Double DQN with seed 21
+2026-04-17 13:29:56 | INFO | Finished Double DQN seed 21 | mean_return_rate 0.2418 | annualized_sharpe 18.1370
+2026-04-17 13:29:56 | INFO | Training Double DQN with seed 42
+2026-04-17 13:29:59 | INFO | Finished Double DQN seed 42 | mean_return_rate -0.0018 | annualized_sharpe -4.7863
+2026-04-17 13:29:59 | INFO | Training Dueling DDQN with seed 7
+2026-04-17 13:30:04 | INFO | Finished Dueling DDQN seed 7 | mean_return_rate 0.1133 | annualized_sharpe 12.2523
+2026-04-17 13:30:04 | INFO | Training Dueling DDQN with seed 21
+2026-04-17 13:30:09 | INFO | Finished Dueling DDQN seed 21 | mean_return_rate 0.1879 | annualized_sharpe 17.0391
+2026-04-17 13:30:09 | INFO | Training Dueling DDQN with seed 42
+2026-04-17 13:30:14 | INFO | Finished Dueling DDQN seed 42 | mean_return_rate 0.0103 | annualized_sharpe 2.5479
+2026-04-17 13:30:14 | INFO | Training D3QN + PER + 3-step with seed 7
+2026-04-17 13:30:19 | INFO | Finished D3QN + PER + 3-step seed 7 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 13:30:19 | INFO | Training D3QN + PER + 3-step with seed 21
+2026-04-17 13:30:24 | INFO | Finished D3QN + PER + 3-step seed 21 | mean_return_rate 0.2417 | annualized_sharpe 18.2068
+2026-04-17 13:30:24 | INFO | Training D3QN + PER + 3-step with seed 42
+2026-04-17 13:30:30 | INFO | Finished D3QN + PER + 3-step seed 42 | mean_return_rate 0.0175 | annualized_sharpe 12.7018
+2026-04-17 13:30:30 | INFO | Training D3QN + PER + 3-step + Noisy with seed 7
+2026-04-17 13:30:39 | INFO | Finished D3QN + PER + 3-step + Noisy seed 7 | mean_return_rate 0.1112 | annualized_sharpe 8.9057
+2026-04-17 13:30:39 | INFO | Training D3QN + PER + 3-step + Noisy with seed 21
+2026-04-17 13:30:49 | INFO | Finished D3QN + PER + 3-step + Noisy seed 21 | mean_return_rate 0.1075 | annualized_sharpe 8.3874
+2026-04-17 13:30:49 | INFO | Training D3QN + PER + 3-step + Noisy with seed 42
+2026-04-17 13:30:58 | INFO | Finished D3QN + PER + 3-step + Noisy seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 13:30:58 | INFO | Ablation results written to results/aapl_dqn_ablation

@@ -1,5 +1,5 @@
 data:
-  path: data/sample_stock.csv
+  path: data/aapl_daily.csv
   start_date:
   end_date:
   date_column: Date

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#FAFAFA"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #1F2937; }
+.title { font-size: 24px; font-weight: 700; }
+.axis { font-size: 12px; }
+.label { font-size: 13px; font-weight: 600; }
+.small { font-size: 11px; fill: #4B5563; }
+</style>
+<text x="90" y="36" class="title">AAPL Ablation: Training Reward Curve</text>
+<text x="90" y="56" class="small">Curves show mean training episode reward across seeds.</text>
+<line x1="90" y1="70" x2="90" y2="490" stroke="#374151" stroke-width="1.5"/>
+<line x1="90" y1="490" x2="950" y2="490" stroke="#374151" stroke-width="1.5"/>
+<line x1="90.00" y1="490" x2="90.00" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="90.00" y="514" text-anchor="middle" class="axis">1</text>
+<line x1="168.18" y1="490" x2="168.18" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="168.18" y="514" text-anchor="middle" class="axis">2</text>
+<line x1="246.36" y1="490" x2="246.36" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="246.36" y="514" text-anchor="middle" class="axis">3</text>
+<line x1="324.55" y1="490" x2="324.55" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="324.55" y="514" text-anchor="middle" class="axis">4</text>
+<line x1="402.73" y1="490" x2="402.73" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="402.73" y="514" text-anchor="middle" class="axis">5</text>
+<line x1="480.91" y1="490" x2="480.91" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="480.91" y="514" text-anchor="middle" class="axis">6</text>
+<line x1="559.09" y1="490" x2="559.09" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="559.09" y="514" text-anchor="middle" class="axis">7</text>
+<line x1="637.27" y1="490" x2="637.27" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="637.27" y="514" text-anchor="middle" class="axis">8</text>
+<line x1="715.45" y1="490" x2="715.45" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="715.45" y="514" text-anchor="middle" class="axis">9</text>
+<line x1="793.64" y1="490" x2="793.64" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="793.64" y="514" text-anchor="middle" class="axis">10</text>
+<line x1="871.82" y1="490" x2="871.82" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="871.82" y="514" text-anchor="middle" class="axis">11</text>
+<line x1="950.00" y1="490" x2="950.00" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="950.00" y="514" text-anchor="middle" class="axis">12</text>
+<line x1="84" y1="490.00" x2="950" y2="490.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="494.00" text-anchor="end" class="axis">-60.10</text>
+<line x1="84" y1="406.00" x2="950" y2="406.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="410.00" text-anchor="end" class="axis">-7.94</text>
+<line x1="84" y1="322.00" x2="950" y2="322.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="326.00" text-anchor="end" class="axis">44.22</text>
+<line x1="84" y1="238.00" x2="950" y2="238.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="242.00" text-anchor="end" class="axis">96.38</text>
+<line x1="84" y1="154.00" x2="950" y2="154.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="158.00" text-anchor="end" class="axis">148.54</text>
+<line x1="84" y1="70.00" x2="950" y2="70.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="74.00" text-anchor="end" class="axis">200.70</text>
+<polyline points="90.00,429.07 168.18,398.42 246.36,300.45 324.55,239.85 402.73,306.52 480.91,398.63 559.09,203.45 637.27,299.97 715.45,128.78 793.64,243.66 871.82,146.82 950.00,105.00" fill="none" stroke="#59A14F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="90" x2="748" y2="90" stroke="#59A14F" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="94" class="axis">Dueling DDQN</text>
+<polyline points="90.00,415.17 168.18,409.59 246.36,380.22 324.55,361.60 402.73,379.90 480.91,359.13 559.09,372.49 637.27,292.08 715.45,248.60 793.64,351.18 871.82,397.56 950.00,355.64" fill="none" stroke="#E15759" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="114" x2="748" y2="114" stroke="#E15759" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="118" class="axis">Noisy Full (sigma=0.5, lr=0.0005)</text>
+<polyline points="90.00,398.04 168.18,412.70 246.36,358.70 324.55,393.96 402.73,384.09 480.91,372.28 559.09,437.07 637.27,419.73 715.45,414.20 793.64,351.45 871.82,329.39 950.00,432.51" fill="none" stroke="#4E79A7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="138" x2="748" y2="138" stroke="#4E79A7" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="142" class="axis">Noisy Full (sigma=0.5, lr=0.00025)</text>
+<polyline points="90.00,455.00 168.18,358.32 246.36,385.21 324.55,294.06 402.73,218.86 480.91,254.72 559.09,246.83 637.27,282.58 715.45,335.13 793.64,298.14 871.82,257.19 950.00,243.12" fill="none" stroke="#B07AA1" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="162" x2="748" y2="162" stroke="#B07AA1" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="166" class="axis">Noisy Full (sigma=0.3, lr=0.00025)</text>
+<text x="520.00" y="542" text-anchor="middle" class="label">Episode</text>
+<text x="24" y="280.00" transform="rotate(-90 24,280.00)" class="label">Episode Reward</text>
+</svg>
