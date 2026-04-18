@@ -1,0 +1,121 @@
+variant,label,episode,mean_reward_return
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),1,-34.866666689515114
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),2,7.39999998609225
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),3,10.866666629910469
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),4,6.899999978641669
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),5,-10.966666681071123
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),6,12.466666653752327
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),7,0.3333333134651184
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),8,15.699999985595545
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),9,59.666666661699615
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),10,91.13333330055077
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),11,173.99999998509884
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),12,61.43333330502113
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),13,79.7999999721845
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),14,74.16666662941377
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),15,-5.033333358665307
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),16,134.8999999736746
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),17,144.0666666527589
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),18,154.5666666602095
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),19,148.8666666497787
+d3qn_per_nstep_raw,D3QN + PER + 3-step (raw),20,158.73333331445852
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),1,-36.36666668703159
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),2,-0.13333333532015482
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),3,9.899999998509884
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),4,-0.866666679581007
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),5,-13.766666697959105
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),6,-10.600000033775965
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),7,-36.70000000049671
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),8,-11.80000002682209
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),9,-1.6666666666666667
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),10,1.5999999990065892
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),11,-0.033333333830038704
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),12,1.633333332836628
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),13,3.16666666418314
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),14,1.1999999682108555
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),15,-2.5000000124176345
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),16,-2.900000018378099
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),17,-15.533333366115889
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),18,6.633333332836628
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),19,6.799999977151553
+d3qn_per_nstep_returns_account,D3QN + PER + 3-step (returns + account),20,-1.2000000427166622
+dueling_ddqn_raw,Dueling DDQN (raw),1,-22.26666675011317
+dueling_ddqn_raw,Dueling DDQN (raw),2,-3.233333431184292
+dueling_ddqn_raw,Dueling DDQN (raw),3,57.59999991456667
+dueling_ddqn_raw,Dueling DDQN (raw),4,95.23333328713973
+dueling_ddqn_raw,Dueling DDQN (raw),5,53.83333324144284
+dueling_ddqn_raw,Dueling DDQN (raw),6,-3.366666741669178
+dueling_ddqn_raw,Dueling DDQN (raw),7,117.83333325137694
+dueling_ddqn_raw,Dueling DDQN (raw),8,57.899999943872295
+dueling_ddqn_raw,Dueling DDQN (raw),9,164.19999993840852
+dueling_ddqn_raw,Dueling DDQN (raw),10,92.86666658520699
+dueling_ddqn_raw,Dueling DDQN (raw),11,152.99999992052713
+dueling_ddqn_raw,Dueling DDQN (raw),12,178.96666662643352
+dueling_ddqn_raw,Dueling DDQN (raw),13,104.29999996473391
+dueling_ddqn_raw,Dueling DDQN (raw),14,145.9333332479
+dueling_ddqn_raw,Dueling DDQN (raw),15,218.13333328068256
+dueling_ddqn_raw,Dueling DDQN (raw),16,144.89999997367462
+dueling_ddqn_raw,Dueling DDQN (raw),17,134.43333332488933
+dueling_ddqn_raw,Dueling DDQN (raw),18,215.2999999547998
+dueling_ddqn_raw,Dueling DDQN (raw),19,132.09999993195137
+dueling_ddqn_raw,Dueling DDQN (raw),20,89.93333325783412
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),1,-15.700000084936619
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),2,1.899999879300595
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),3,9.466666559378302
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),4,-0.033333358665307365
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),5,34.33333327372869
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),6,66.09999996672074
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),7,101.86666664481163
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),8,65.99999994039536
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),9,64.09999998658895
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),10,28.333333333333332
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),11,111.03333329906066
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),12,-44.43333334972461
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),13,107.19999998311202
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),14,4.133333295583725
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),15,85.06666664282481
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),16,109.29999998956919
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),17,102.96666666120291
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),18,58.09999999652306
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),19,154.79999999701977
+dueling_ddqn_returns_account,Dueling DDQN (returns + account),20,113.33333330849807
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),1,-13.633333337803682
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),2,-10.166666669150194
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),3,8.066666662693024
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),4,19.633333327869575
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),5,8.266666665673256
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),6,21.166666659216087
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),7,12.866666659712791
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),8,62.799999992052726
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),9,89.7999999721845
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),10,26.09999994188547
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),11,-2.7000000899036727
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),12,23.333333283662796
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),13,-8.166666713853678
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),14,56.56666664034128
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),15,81.13333330055077
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),16,42.29999998460213
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),17,101.56666664034128
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),18,84.69999999552965
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),19,103.59999997913837
+dueling_noisy_full_sigma05_raw,Noisy Full (raw),20,-15.300000054140886
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),1,-13.533333385984102
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),2,-8.066666687528292
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),3,-3.700000030299028
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),4,-7.766666683057944
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),5,13.399999976158142
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),6,-16.76666669299205
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),7,8.866666649778685
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),8,118.49999997764826
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),9,43.266666665673256
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),10,54.966666666169964
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),11,47.79999999205271
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),12,53.93333331743876
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),13,51.46666666368643
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),14,37.76666665822268
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),15,49.099999936918415
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),16,43.43333323548237
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),17,-22.00000010430813
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),18,35.66666660209497
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),19,51.19999994337559
+dueling_noisy_full_sigma05_returns_account,Noisy Full (returns + account),20,24.299999989569187

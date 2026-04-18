@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#FAFAFA"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #1F2937; }
+.title { font-size: 24px; font-weight: 700; }
+.axis { font-size: 12px; }
+.label { font-size: 13px; font-weight: 600; }
+.small { font-size: 11px; fill: #4B5563; }
+</style>
+<text x="90" y="36" class="title">AAPL Ablation: Annualized Sharpe Ratio</text>
+<text x="90" y="56" class="small">Bars show mean across seeds; whiskers show one standard deviation.</text>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#374151" stroke-width="1.5"/>
+<line x1="90" y1="409.17" x2="950" y2="409.17" stroke="#9CA3AF" stroke-width="1.2"/>
+<line x1="84" y1="440.00" x2="950" y2="440.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="444.00" text-anchor="end" class="axis">-1.45</text>
+<line x1="84" y1="366.00" x2="950" y2="366.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="370.00" text-anchor="end" class="axis">2.04</text>
+<line x1="84" y1="292.00" x2="950" y2="292.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="296.00" text-anchor="end" class="axis">5.53</text>
+<line x1="84" y1="218.00" x2="950" y2="218.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="222.00" text-anchor="end" class="axis">9.02</text>
+<line x1="84" y1="144.00" x2="950" y2="144.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="148.00" text-anchor="end" class="axis">12.51</text>
+<line x1="84" y1="70.00" x2="950" y2="70.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="74.00" text-anchor="end" class="axis">16.00</text>
+<rect x="152.50" y="126.92" width="90.00" height="282.25" fill="#59A14F" rx="6"/>
+<line x1="197.50" y1="106.35" x2="197.50" y2="147.49" stroke="#111827" stroke-width="1.5"/>
+<line x1="187.50" y1="106.35" x2="207.50" y2="106.35" stroke="#111827" stroke-width="1.5"/>
+<line x1="187.50" y1="147.49" x2="207.50" y2="147.49" stroke="#111827" stroke-width="1.5"/>
+<text x="197.50" y="462" text-anchor="middle" class="label">Dueling DDQN</text>
+<text x="197.50" y="118.92" text-anchor="middle" class="small">13.316</text>
+<rect x="367.50" y="183.98" width="90.00" height="225.18" fill="#E15759" rx="6"/>
+<line x1="412.50" y1="100.83" x2="412.50" y2="267.13" stroke="#111827" stroke-width="1.5"/>
+<line x1="402.50" y1="100.83" x2="422.50" y2="100.83" stroke="#111827" stroke-width="1.5"/>
+<line x1="402.50" y1="267.13" x2="422.50" y2="267.13" stroke="#111827" stroke-width="1.5"/>
+<text x="412.50" y="462" text-anchor="middle" class="label">D3QN + PER + 3-step</text>
+<text x="412.50" y="175.98" text-anchor="middle" class="small">10.624</text>
+<rect x="582.50" y="190.40" width="90.00" height="218.76" fill="#F28E2B" rx="6"/>
+<line x1="627.50" y1="126.98" x2="627.50" y2="253.83" stroke="#111827" stroke-width="1.5"/>
+<line x1="617.50" y1="126.98" x2="637.50" y2="126.98" stroke="#111827" stroke-width="1.5"/>
+<line x1="617.50" y1="253.83" x2="637.50" y2="253.83" stroke="#111827" stroke-width="1.5"/>
+<text x="627.50" y="462" text-anchor="middle" class="label">Noisy Full (sigma=0.5, lr=0.0005)</text>
+<text x="627.50" y="182.40" text-anchor="middle" class="small">10.321</text>
+<rect x="797.50" y="201.08" width="90.00" height="208.08" fill="#4E79A7" rx="6"/>
+<line x1="842.50" y1="165.20" x2="842.50" y2="236.97" stroke="#111827" stroke-width="1.5"/>
+<line x1="832.50" y1="165.20" x2="852.50" y2="165.20" stroke="#111827" stroke-width="1.5"/>
+<line x1="832.50" y1="236.97" x2="852.50" y2="236.97" stroke="#111827" stroke-width="1.5"/>
+<text x="842.50" y="462" text-anchor="middle" class="label">Noisy Full (sigma=0.3, lr=0.00025)</text>
+<text x="842.50" y="193.08" text-anchor="middle" class="small">9.817</text>
+<text x="24" y="255.00" transform="rotate(-90 24,255.00)" class="label">Annualized Sharpe Ratio</text>
+</svg>

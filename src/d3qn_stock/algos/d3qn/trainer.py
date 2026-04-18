@@ -41,6 +41,8 @@ class DataConfig:
 class EnvConfig:
     reward: str = "profit"
     window_size: int = 10
+    observation_mode: str = "raw"
+    include_account_features: bool = False
     trading_period: Optional[int] = 24
     train_split: float = 0.8
     initial_capital: float = 10_000.0
@@ -318,6 +320,8 @@ def _build_eval_env(config: Config, df, device: str):
         config.env.reward,
         config.env.window_size,
         device,
+        observation_mode=config.env.observation_mode,
+        include_account_features=config.env.include_account_features,
         trading_period=config.env.trading_period,
         max_positions=config.env.max_positions,
         max_exposure_ratio=config.env.max_exposure_ratio,
@@ -426,7 +430,6 @@ def _evaluate_with_agent(
                         break
 
                 returns.append(episode_return)
-                cumulative_returns.append(env.cumulative_return)
                 base_env = _unwrap_trading_env(env)
                 if base_env is not None and hasattr(base_env, "equity_start") and hasattr(base_env, "equity_end"):
                     equity_start = float(base_env.equity_start)
@@ -434,6 +437,14 @@ def _evaluate_with_agent(
                     episode_return_rate = (equity_end / (equity_start + 1e-8)) - 1.0
                 else:
                     episode_return_rate = 0.0
+                if episode_equity_curve:
+                    start_equity = max(float(episode_equity_curve[0]), 1e-8)
+                    episode_cumulative_return_curve = [
+                        float((equity / start_equity) - 1.0) for equity in episode_equity_curve
+                    ]
+                else:
+                    episode_cumulative_return_curve = [0.0]
+                cumulative_returns.append(episode_cumulative_return_curve)
                 return_rates.append(episode_return_rate)
                 diagnostics = _summarize_episode_diagnostics(
                     base_env,
@@ -515,6 +526,8 @@ def train(config: Config, run_paths: RunPaths) -> RunPaths:
             config.env.reward,
             config.env.window_size,
             device,
+            observation_mode=config.env.observation_mode,
+            include_account_features=config.env.include_account_features,
             max_positions=config.env.max_positions,
             max_exposure_ratio=config.env.max_exposure_ratio,
             sell_mode=config.env.sell_mode,

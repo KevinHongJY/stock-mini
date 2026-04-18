@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#FAFAFA"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #1F2937; }
+.title { font-size: 24px; font-weight: 700; }
+.axis { font-size: 12px; }
+.label { font-size: 13px; font-weight: 600; }
+.small { font-size: 11px; fill: #4B5563; }
+</style>
+<text x="90" y="36" class="title">AAPL Ablation: Training Reward Curve</text>
+<text x="90" y="56" class="small">Curves show mean training episode reward across seeds.</text>
+<line x1="90" y1="70" x2="90" y2="490" stroke="#374151" stroke-width="1.5"/>
+<line x1="90" y1="490" x2="950" y2="490" stroke="#374151" stroke-width="1.5"/>
+<line x1="90.00" y1="490" x2="90.00" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="90.00" y="514" text-anchor="middle" class="axis">1</text>
+<line x1="135.26" y1="490" x2="135.26" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="135.26" y="514" text-anchor="middle" class="axis">2</text>
+<line x1="180.53" y1="490" x2="180.53" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="180.53" y="514" text-anchor="middle" class="axis">3</text>
+<line x1="225.79" y1="490" x2="225.79" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="225.79" y="514" text-anchor="middle" class="axis">4</text>
+<line x1="271.05" y1="490" x2="271.05" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="271.05" y="514" text-anchor="middle" class="axis">5</text>
+<line x1="316.32" y1="490" x2="316.32" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="316.32" y="514" text-anchor="middle" class="axis">6</text>
+<line x1="361.58" y1="490" x2="361.58" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="361.58" y="514" text-anchor="middle" class="axis">7</text>
+<line x1="406.84" y1="490" x2="406.84" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="406.84" y="514" text-anchor="middle" class="axis">8</text>
+<line x1="452.11" y1="490" x2="452.11" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="452.11" y="514" text-anchor="middle" class="axis">9</text>
+<line x1="497.37" y1="490" x2="497.37" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="497.37" y="514" text-anchor="middle" class="axis">10</text>
+<line x1="542.63" y1="490" x2="542.63" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="542.63" y="514" text-anchor="middle" class="axis">11</text>
+<line x1="587.89" y1="490" x2="587.89" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="587.89" y="514" text-anchor="middle" class="axis">12</text>
+<line x1="633.16" y1="490" x2="633.16" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="633.16" y="514" text-anchor="middle" class="axis">13</text>
+<line x1="678.42" y1="490" x2="678.42" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="678.42" y="514" text-anchor="middle" class="axis">14</text>
+<line x1="723.68" y1="490" x2="723.68" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="723.68" y="514" text-anchor="middle" class="axis">15</text>
+<line x1="768.95" y1="490" x2="768.95" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="768.95" y="514" text-anchor="middle" class="axis">16</text>
+<line x1="814.21" y1="490" x2="814.21" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="814.21" y="514" text-anchor="middle" class="axis">17</text>
+<line x1="859.47" y1="490" x2="859.47" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="859.47" y="514" text-anchor="middle" class="axis">18</text>
+<line x1="904.74" y1="490" x2="904.74" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="904.74" y="514" text-anchor="middle" class="axis">19</text>
+<line x1="950.00" y1="490" x2="950.00" y2="496" stroke="#374151" stroke-width="1"/>
+<text x="950.00" y="514" text-anchor="middle" class="axis">20</text>
+<line x1="84" y1="490.00" x2="950" y2="490.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="494.00" text-anchor="end" class="axis">-70.69</text>
+<line x1="84" y1="406.00" x2="950" y2="406.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="410.00" text-anchor="end" class="axis">-7.67</text>
+<line x1="84" y1="322.00" x2="950" y2="322.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="326.00" text-anchor="end" class="axis">55.34</text>
+<line x1="84" y1="238.00" x2="950" y2="238.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="242.00" text-anchor="end" class="axis">118.36</text>
+<line x1="84" y1="154.00" x2="950" y2="154.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="158.00" text-anchor="end" class="axis">181.37</text>
+<line x1="84" y1="70.00" x2="950" y2="70.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="74.00" text-anchor="end" class="axis">244.39</text>
+<polyline points="90.00,425.45 135.26,400.08 180.53,318.99 225.79,268.83 271.05,324.01 316.32,400.26 361.58,238.70 406.84,318.59 452.11,176.89 497.37,271.98 542.63,191.82 587.89,157.21 633.16,256.74 678.42,201.24 723.68,105.00 768.95,202.62 814.21,216.57 859.47,108.78 904.74,219.68 950.00,275.89" fill="none" stroke="#59A14F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="90" x2="748" y2="90" stroke="#59A14F" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="94" class="axis">Dueling DDQN (raw)</text>
+<polyline points="90.00,416.70 135.26,393.24 180.53,383.15 225.79,395.82 271.05,350.00 316.32,307.66 361.58,259.98 406.84,307.79 452.11,310.33 497.37,358.00 542.63,247.76 587.89,455.00 633.16,252.87 678.42,390.26 723.68,282.38 768.95,250.07 814.21,258.52 859.47,318.32 904.74,189.42 950.00,244.70" fill="none" stroke="#8CD17D" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="114" x2="748" y2="114" stroke="#8CD17D" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="118" class="axis">Dueling DDQN (returns + account)</text>
+<polyline points="90.00,442.25 135.26,385.91 180.53,381.29 225.79,386.57 271.05,410.39 316.32,379.15 361.58,395.33 406.84,374.84 452.11,316.24 497.37,274.29 542.63,163.83 587.89,313.88 633.16,289.40 678.42,296.91 723.68,402.48 768.95,215.95 814.21,203.73 859.47,189.73 904.74,197.33 950.00,184.18" fill="none" stroke="#E15759" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="138" x2="748" y2="138" stroke="#E15759" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="142" class="axis">D3QN + PER + 3-step (raw)</text>
+<polyline points="90.00,444.25 135.26,395.95 180.53,382.57 225.79,396.93 271.05,414.12 316.32,409.90 361.58,444.69 406.84,411.50 452.11,397.99 497.37,393.64 542.63,395.82 587.89,393.59 633.16,391.55 678.42,394.17 723.68,399.10 768.95,399.64 814.21,416.48 859.47,386.93 904.74,386.71 950.00,397.37" fill="none" stroke="#FF9D9A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="162" x2="748" y2="162" stroke="#FF9D9A" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="166" class="axis">D3QN + PER + 3-step (returns + account)</text>
+<polyline points="90.00,413.94 135.26,409.32 180.53,385.02 225.79,369.60 271.05,384.75 316.32,367.56 361.58,378.62 406.84,312.06 452.11,276.07 497.37,360.98 542.63,399.37 587.89,364.67 633.16,406.66 678.42,320.37 723.68,287.62 768.95,339.38 814.21,260.38 859.47,282.87 904.74,257.67 950.00,416.17" fill="none" stroke="#4E79A7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="186" x2="748" y2="186" stroke="#4E79A7" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="190" class="axis">Noisy Full (raw)</text>
+<polyline points="90.00,413.81 135.26,406.52 180.53,400.70 225.79,406.12 271.05,377.91 316.32,418.12 361.58,383.95 406.84,237.81 452.11,338.10 497.37,322.50 542.63,332.05 587.89,323.88 633.16,327.17 678.42,345.43 723.68,330.32 768.95,337.87 814.21,425.10 859.47,348.23 904.74,327.52 950.00,363.38" fill="none" stroke="#A0CBE8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="730" y1="210" x2="748" y2="210" stroke="#A0CBE8" stroke-width="4" stroke-linecap="round"/>
+<text x="756" y="214" class="axis">Noisy Full (returns + account)</text>
+<text x="520.00" y="542" text-anchor="middle" class="label">Episode</text>
+<text x="24" y="280.00" transform="rotate(-90 24,280.00)" class="label">Episode Reward</text>
+</svg>

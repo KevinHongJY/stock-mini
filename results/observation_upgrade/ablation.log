@@ -1,0 +1,37 @@
+2026-04-17 17:51:09 | INFO | Training Dueling DDQN (raw) with seed 7
+2026-04-17 17:51:18 | INFO | Finished Dueling DDQN (raw) seed 7 | mean_return_rate 0.1037 | annualized_sharpe 10.4588
+2026-04-17 17:51:18 | INFO | Training Dueling DDQN (raw) with seed 21
+2026-04-17 17:51:26 | INFO | Finished Dueling DDQN (raw) seed 21 | mean_return_rate 0.2327 | annualized_sharpe 14.1743
+2026-04-17 17:51:26 | INFO | Training Dueling DDQN (raw) with seed 42
+2026-04-17 17:51:34 | INFO | Finished Dueling DDQN (raw) seed 42 | mean_return_rate 0.0261 | annualized_sharpe 5.0489
+2026-04-17 17:51:34 | INFO | Training Dueling DDQN (returns + account) with seed 7
+2026-04-17 17:51:43 | INFO | Finished Dueling DDQN (returns + account) seed 7 | mean_return_rate 0.2428 | annualized_sharpe 14.8064
+2026-04-17 17:51:43 | INFO | Training Dueling DDQN (returns + account) with seed 21
+2026-04-17 17:51:52 | INFO | Finished Dueling DDQN (returns + account) seed 21 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:51:52 | INFO | Training Dueling DDQN (returns + account) with seed 42
+2026-04-17 17:52:01 | INFO | Finished Dueling DDQN (returns + account) seed 42 | mean_return_rate -0.0012 | annualized_sharpe -1.5549
+2026-04-17 17:52:01 | INFO | Training D3QN + PER + 3-step (raw) with seed 7
+2026-04-17 17:52:10 | INFO | Finished D3QN + PER + 3-step (raw) seed 7 | mean_return_rate 0.2368 | annualized_sharpe 13.5326
+2026-04-17 17:52:10 | INFO | Training D3QN + PER + 3-step (raw) with seed 21
+2026-04-17 17:52:19 | INFO | Finished D3QN + PER + 3-step (raw) seed 21 | mean_return_rate 0.1509 | annualized_sharpe 10.6895
+2026-04-17 17:52:19 | INFO | Training D3QN + PER + 3-step (raw) with seed 42
+2026-04-17 17:52:28 | INFO | Finished D3QN + PER + 3-step (raw) seed 42 | mean_return_rate 0.0428 | annualized_sharpe 11.7142
+2026-04-17 17:52:28 | INFO | Training D3QN + PER + 3-step (returns + account) with seed 7
+2026-04-17 17:52:38 | INFO | Finished D3QN + PER + 3-step (returns + account) seed 7 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:52:38 | INFO | Training D3QN + PER + 3-step (returns + account) with seed 21
+2026-04-17 17:52:48 | INFO | Finished D3QN + PER + 3-step (returns + account) seed 21 | mean_return_rate 0.1227 | annualized_sharpe 14.7220
+2026-04-17 17:52:48 | INFO | Training D3QN + PER + 3-step (returns + account) with seed 42
+2026-04-17 17:52:58 | INFO | Finished D3QN + PER + 3-step (returns + account) seed 42 | mean_return_rate 0.2430 | annualized_sharpe 14.4129
+2026-04-17 17:52:58 | INFO | Training Noisy Full (raw) with seed 7
+2026-04-17 17:53:13 | INFO | Finished Noisy Full (raw) seed 7 | mean_return_rate 0.2430 | annualized_sharpe 14.4129
+2026-04-17 17:53:13 | INFO | Training Noisy Full (raw) with seed 21
+2026-04-17 17:53:27 | INFO | Finished Noisy Full (raw) seed 21 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:53:27 | INFO | Training Noisy Full (raw) with seed 42
+2026-04-17 17:53:42 | INFO | Finished Noisy Full (raw) seed 42 | mean_return_rate 0.0260 | annualized_sharpe 6.0156
+2026-04-17 17:53:42 | INFO | Training Noisy Full (returns + account) with seed 7
+2026-04-17 17:53:57 | INFO | Finished Noisy Full (returns + account) seed 7 | mean_return_rate 0.2125 | annualized_sharpe 13.4826
+2026-04-17 17:53:57 | INFO | Training Noisy Full (returns + account) with seed 21
+2026-04-17 17:54:12 | INFO | Finished Noisy Full (returns + account) seed 21 | mean_return_rate 0.2439 | annualized_sharpe 14.4974
+2026-04-17 17:54:12 | INFO | Training Noisy Full (returns + account) with seed 42
+2026-04-17 17:54:28 | INFO | Finished Noisy Full (returns + account) seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:54:28 | INFO | Ablation results written to results/observation_upgrade

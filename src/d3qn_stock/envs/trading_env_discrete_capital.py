@@ -11,6 +11,19 @@ import torch
 class DiscreteCapitalTradingEnvironment:
     """Discrete-action trading environment with explicit cash and position accounting."""
 
+    ACCOUNT_FEATURE_KEYS = (
+        "cash_ratio",
+        "position_ratio",
+        "equity_return",
+        "last_action",
+        "turnover_ratio",
+        "effective_max_exposure_ratio",
+        "buy_headroom_ratio",
+        "cooldown_remaining",
+        "min_hold_remaining",
+        "holding_age",
+    )
+
     def __init__(
         self,
         data: pd.DataFrame,
@@ -40,6 +53,8 @@ class DiscreteCapitalTradingEnvironment:
         sr_clip: float = 1.0,
         periods_per_year: float = 252.0,
         annualize_sr_reward: bool = False,
+        observation_mode: str = "raw",
+        include_account_features: bool = False,
         device: str = "auto",
     ) -> None:
         self.data = data
@@ -129,6 +144,11 @@ class DiscreteCapitalTradingEnvironment:
             raise ValueError("periods_per_year must be > 0.")
         self.annualize_sr_reward = bool(annualize_sr_reward)
         self.sr_scale = math.sqrt(self.periods_per_year) if self.annualize_sr_reward else 1.0
+        valid_observation_modes = {"raw", "returns"}
+        if observation_mode not in valid_observation_modes:
+            raise ValueError(f"observation_mode must be one of {sorted(valid_observation_modes)}.")
+        self.observation_mode = observation_mode
+        self.include_account_features = bool(include_account_features)
         self.device = (
             torch.device("cuda" if torch.cuda.is_available() else "cpu")
             if device == "auto"
@@ -144,6 +164,9 @@ class DiscreteCapitalTradingEnvironment:
         self._rolling_vol = self._build_rolling_vol(close_values, self.dynamic_exposure_vol_window)
         valid_vol = self._rolling_vol[np.isfinite(self._rolling_vol) & (self._rolling_vol > self.sr_eps)]
         self.dynamic_exposure_ref_vol = float(np.median(valid_vol)) if valid_vol.size > 0 else 0.0
+        self.price_feature_dim = self.window_size
+        self.account_feature_dim = len(self.ACCOUNT_FEATURE_KEYS) if self.include_account_features else 0
+        self.obs_dim = self.price_feature_dim + self.account_feature_dim
         self.reset(start_index=self.window_size - 1)
 
     @staticmethod
@@ -351,8 +374,24 @@ class DiscreteCapitalTradingEnvironment:
     def get_state(self) -> Optional[torch.Tensor]:
         if self.done:
             return None
-        window = self.data.iloc[self.t - (self.window_size - 1) : self.t + 1]["Close"]
-        return torch.tensor([float(value) for value in window], device=self.device, dtype=torch.float32)
+        window = self.data.iloc[self.t - (self.window_size - 1) : self.t + 1]["Close"].to_numpy(dtype=float)
+        if self.observation_mode == "returns":
+            clipped = np.clip(window, self.sr_eps, None)
+            log_prices = np.log(clipped)
+            price_features = np.diff(log_prices, prepend=log_prices[0]).astype(np.float32)
+        else:
+            price_features = window.astype(np.float32)
+
+        if not self.include_account_features:
+            features = price_features
+        else:
+            account_features = self.get_account_features()
+            account_vector = np.array(
+                [float(account_features[key]) for key in self.ACCOUNT_FEATURE_KEYS],
+                dtype=np.float32,
+            )
+            features = np.concatenate([price_features, account_vector]).astype(np.float32, copy=False)
+        return torch.tensor(features, device=self.device, dtype=torch.float32)
 
     def get_account_features(self) -> dict[str, float]:
         price = self._current_price()

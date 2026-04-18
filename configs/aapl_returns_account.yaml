@@ -12,8 +12,8 @@ data:
 env:
   reward: profit
   window_size: 10
-  observation_mode: raw
-  include_account_features: false
+  observation_mode: returns
+  include_account_features: true
   trading_period: 24
   train_split: 0.8
   initial_capital: 10000.0

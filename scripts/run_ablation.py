@@ -218,10 +218,237 @@ NOISY_FULL_FOLLOWUP_VARIANTS: tuple[Variant, ...] = (
     ),
 )
 
+FINAL_CONFIRMATION_VARIANTS: tuple[Variant, ...] = (
+    Variant(
+        key="dueling_ddqn",
+        label="Dueling DDQN",
+        color="#59A14F",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", False),
+        ),
+    ),
+    Variant(
+        key="d3qn_per_nstep",
+        label="D3QN + PER + 3-step",
+        color="#E15759",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", True),
+            ("agent.n_step", 3),
+            ("model.use_noisy", False),
+        ),
+    ),
+    Variant(
+        key="dueling_noisy_full_sigma05",
+        label="Noisy Full (sigma=0.5, lr=0.0005)",
+        color="#F28E2B",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", True),
+            ("model.noisy_sigma_init", 0.5),
+            ("model.noisy_head_only", False),
+        ),
+    ),
+    Variant(
+        key="dueling_noisy_full_sigma03_lr25",
+        label="Noisy Full (sigma=0.3, lr=0.00025)",
+        color="#4E79A7",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("agent.batch_size", 32),
+            ("agent.learning_rate", 0.00025),
+            ("agent.target_update", 10),
+            ("model.use_noisy", True),
+            ("model.noisy_sigma_init", 0.3),
+            ("model.noisy_head_only", False),
+        ),
+    ),
+)
+
+OBSERVATION_UPGRADE_VARIANTS: tuple[Variant, ...] = (
+    Variant(
+        key="dueling_ddqn_raw",
+        label="Dueling DDQN (raw)",
+        color="#59A14F",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "raw"),
+            ("env.include_account_features", False),
+        ),
+    ),
+    Variant(
+        key="dueling_ddqn_returns_account",
+        label="Dueling DDQN (returns + account)",
+        color="#8CD17D",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+    Variant(
+        key="d3qn_per_nstep_raw",
+        label="D3QN + PER + 3-step (raw)",
+        color="#E15759",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", True),
+            ("agent.n_step", 3),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "raw"),
+            ("env.include_account_features", False),
+        ),
+    ),
+    Variant(
+        key="d3qn_per_nstep_returns_account",
+        label="D3QN + PER + 3-step (returns + account)",
+        color="#FF9D9A",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", True),
+            ("agent.n_step", 3),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+    Variant(
+        key="dueling_noisy_full_sigma05_raw",
+        label="Noisy Full (raw)",
+        color="#4E79A7",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", True),
+            ("model.noisy_sigma_init", 0.5),
+            ("model.noisy_head_only", False),
+            ("env.observation_mode", "raw"),
+            ("env.include_account_features", False),
+        ),
+    ),
+    Variant(
+        key="dueling_noisy_full_sigma05_returns_account",
+        label="Noisy Full (returns + account)",
+        color="#A0CBE8",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", True),
+            ("model.noisy_sigma_init", 0.5),
+            ("model.noisy_head_only", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+)
+
+FEATURE_ONLY_VARIANTS: tuple[Variant, ...] = (
+    Variant(
+        key="dqn_returns_account",
+        label="DQN",
+        color="#4E79A7",
+        overrides=(
+            ("model.type", "mlp"),
+            ("agent.double", False),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+    Variant(
+        key="ddqn_returns_account",
+        label="DDQN",
+        color="#F28E2B",
+        overrides=(
+            ("model.type", "mlp"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+    Variant(
+        key="dueling_ddqn_returns_account",
+        label="Duel DDQN",
+        color="#59A14F",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", False),
+            ("agent.n_step", 1),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+    Variant(
+        key="d3qn_per_nstep_returns_account",
+        label="D3QN (+PER+3-step)",
+        color="#FF9D9A",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", True),
+            ("agent.n_step", 3),
+            ("model.use_noisy", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+    Variant(
+        key="d3qn_per_nstep_noisy_returns_account",
+        label="D3QN+Noisy",
+        color="#A0CBE8",
+        overrides=(
+            ("model.type", "mlp_dueling"),
+            ("agent.double", True),
+            ("agent.per_enabled", True),
+            ("agent.n_step", 3),
+            ("model.use_noisy", True),
+            ("model.noisy_sigma_init", 0.5),
+            ("model.noisy_head_only", False),
+            ("env.observation_mode", "returns"),
+            ("env.include_account_features", True),
+        ),
+    ),
+)
+
 VARIANT_SETS: dict[str, tuple[Variant, ...]] = {
     "default": DEFAULT_VARIANTS,
     "noisy_tuning": NOISY_TUNING_VARIANTS,
     "noisy_full_followup": NOISY_FULL_FOLLOWUP_VARIANTS,
+    "final_confirmation": FINAL_CONFIRMATION_VARIANTS,
+    "observation_upgrade": OBSERVATION_UPGRADE_VARIANTS,
+    "feature_only": FEATURE_ONLY_VARIANTS,
 }
 
 
@@ -428,15 +655,25 @@ def _build_bar_chart_svg(
     _write_svg(path, lines)
 
 
-def _build_line_chart_svg(path: Path, title: str, y_label: str, curve_df: pd.DataFrame, variants: tuple[Variant, ...]) -> None:
+def _build_line_chart_svg(
+    path: Path,
+    title: str,
+    y_label: str,
+    x_label: str,
+    subtitle: str,
+    curve_df: pd.DataFrame,
+    variants: tuple[Variant, ...],
+    x_column: str,
+    y_column: str,
+) -> None:
     width, height = 980, 560
     margin_left, margin_right, margin_top, margin_bottom = 90, 30, 70, 70
     plot_width = width - margin_left - margin_right
     plot_height = height - margin_top - margin_bottom
-    x_min = float(curve_df["episode"].min())
-    x_max = float(curve_df["episode"].max())
-    y_min = float(curve_df["mean_reward_return"].min())
-    y_max = float(curve_df["mean_reward_return"].max())
+    x_min = float(curve_df[x_column].min())
+    x_max = float(curve_df[x_column].max())
+    y_min = float(curve_df[y_column].min())
+    y_max = float(curve_df[y_column].max())
     if math.isclose(y_min, y_max):
         y_max = y_min + 1.0
     pad = max((y_max - y_min) * 0.1, 1e-6)
@@ -445,9 +682,7 @@ def _build_line_chart_svg(path: Path, title: str, y_label: str, curve_df: pd.Dat
 
     lines = _svg_header(width, height)
     lines.append(f'<text x="{margin_left}" y="36" class="title">{title}</text>')
-    lines.append(
-        f'<text x="{margin_left}" y="56" class="small">Curves show mean training episode reward across seeds.</text>'
-    )
+    lines.append(f'<text x="{margin_left}" y="56" class="small">{subtitle}</text>')
     lines.append(
         f'<line x1="{margin_left}" y1="{margin_top}" x2="{margin_left}" y2="{margin_top + plot_height}" stroke="#374151" stroke-width="1.5"/>'
     )
@@ -455,13 +690,15 @@ def _build_line_chart_svg(path: Path, title: str, y_label: str, curve_df: pd.Dat
         f'<line x1="{margin_left}" y1="{margin_top + plot_height}" x2="{margin_left + plot_width}" y2="{margin_top + plot_height}" stroke="#374151" stroke-width="1.5"/>'
     )
 
-    for tick_idx in range(int(x_min), int(x_max) + 1):
-        x = _scale_linear(float(tick_idx), x_min, x_max, margin_left, margin_left + plot_width)
+    x_tick_count = min(10, max(2, int(x_max - x_min) + 1))
+    for tick_idx in range(x_tick_count):
+        tick_value = x_min + (x_max - x_min) * tick_idx / max(x_tick_count - 1, 1)
+        x = _scale_linear(float(tick_value), x_min, x_max, margin_left, margin_left + plot_width)
         lines.append(
             f'<line x1="{x:.2f}" y1="{margin_top + plot_height}" x2="{x:.2f}" y2="{margin_top + plot_height + 6}" stroke="#374151" stroke-width="1"/>'
         )
         lines.append(
-            f'<text x="{x:.2f}" y="{margin_top + plot_height + 24}" text-anchor="middle" class="axis">{tick_idx}</text>'
+            f'<text x="{x:.2f}" y="{margin_top + plot_height + 24}" text-anchor="middle" class="axis">{int(round(tick_value))}</text>'
         )
     for tick_idx in range(6):
         value = y_min + (y_max - y_min) * tick_idx / 5.0
@@ -476,11 +713,11 @@ def _build_line_chart_svg(path: Path, title: str, y_label: str, curve_df: pd.Dat
     legend_x = margin_left + plot_width - 220
     legend_y = margin_top + 20
     for idx, variant in enumerate(variants):
-        variant_df = curve_df[curve_df["variant"] == variant.key].sort_values("episode")
+        variant_df = curve_df[curve_df["variant"] == variant.key].sort_values(x_column)
         points = []
         for row in variant_df.itertuples():
-            x = _scale_linear(float(row.episode), x_min, x_max, margin_left, margin_left + plot_width)
-            y = _scale_linear(float(row.mean_reward_return), y_min, y_max, margin_top + plot_height, margin_top)
+            x = _scale_linear(float(getattr(row, x_column)), x_min, x_max, margin_left, margin_left + plot_width)
+            y = _scale_linear(float(getattr(row, y_column)), y_min, y_max, margin_top + plot_height, margin_top)
             points.append(f"{x:.2f},{y:.2f}")
         lines.append(
             f'<polyline points="{" ".join(points)}" fill="none" stroke="{variant.color}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>'
@@ -494,7 +731,7 @@ def _build_line_chart_svg(path: Path, title: str, y_label: str, curve_df: pd.Dat
         )
 
     lines.append(
-        f'<text x="{margin_left + plot_width / 2:.2f}" y="{height - 18}" text-anchor="middle" class="label">Episode</text>'
+        f'<text x="{margin_left + plot_width / 2:.2f}" y="{height - 18}" text-anchor="middle" class="label">{x_label}</text>'
     )
     lines.append(
         f'<text x="24" y="{margin_top + plot_height / 2:.2f}" transform="rotate(-90 24,{margin_top + plot_height / 2:.2f})" class="label">{y_label}</text>'
@@ -510,11 +747,17 @@ def _write_markdown_report(
 ) -> None:
     report_path = output_root / "ablation_report.md"
     best_return = summary_df.sort_values("mean_return_rate_mean", ascending=False).iloc[0]
-    best_sharpe = summary_df.sort_values("annualized_sharpe_ratio_mean", ascending=False).iloc[0]
+    best_sharpe = summary_df.sort_values("sharpe_ratio_mean", ascending=False).iloc[0]
     if args.variant_set == "noisy_tuning":
         report_title = "AAPL Noisy Tuning"
     elif args.variant_set == "noisy_full_followup":
         report_title = "AAPL Noisy Full Follow-Up"
+    elif args.variant_set == "final_confirmation":
+        report_title = "AAPL Final Confirmation"
+    elif args.variant_set == "observation_upgrade":
+        report_title = "AAPL Observation Upgrade"
+    elif args.variant_set == "feature_only":
+        report_title = "AAPL Feature-Only Comparison"
     else:
         report_title = "AAPL DQN Ablation"
     lines = [
@@ -532,13 +775,14 @@ def _write_markdown_report(
         "## Best Variants",
         "",
         f"- Highest mean return rate: **{best_return['label']}** ({best_return['mean_return_rate_mean'] * 100:.2f}% +/- {best_return['mean_return_rate_std'] * 100:.2f}%)",
-        f"- Highest annualized Sharpe ratio: **{best_sharpe['label']}** ({best_sharpe['annualized_sharpe_ratio_mean']:.3f} +/- {best_sharpe['annualized_sharpe_ratio_std']:.3f})",
+        f"- Highest mean Sharpe ratio: **{best_sharpe['label']}** ({best_sharpe['sharpe_ratio_mean']:.3f} +/- {best_sharpe['sharpe_ratio_std']:.3f})",
         "",
         "## Files",
         "",
         "- `ablation_runs.csv`: one row per variant-seed run",
         "- `ablation_summary.csv`: aggregated mean and standard deviation by variant",
         "- `training_curve_summary.csv`: mean episode reward curves across seeds",
+        "- `eval_curve_summary.csv`: mean evaluation cumulative return curves across seeds and windows",
         "- `figures/`: SVG charts ready to use in the report",
         "",
     ]
@@ -557,6 +801,7 @@ def main() -> None:
     base_config = load_config(Path(args.config))
     run_rows: list[dict[str, object]] = []
     curve_rows: list[dict[str, object]] = []
+    eval_curve_rows: list[dict[str, object]] = []
 
     for variant in variants:
         for seed in args.seeds:
@@ -572,7 +817,7 @@ def main() -> None:
                 logger.info("Skipping existing run for %s seed %s", variant.label, seed)
                 save_config(config, run_paths.config_resolved)
 
-            mean_reward_return, eval_metrics, _ = evaluate(
+            mean_reward_return, eval_metrics, eval_cumulative_returns = evaluate(
                 config=config,
                 checkpoint_path=checkpoint_path,
                 episodes=config.eval.num_episodes,
@@ -595,6 +840,18 @@ def main() -> None:
                         "avg_q": float(row.avg_q),
                     }
                 )
+            for episode_index, episode_curve in enumerate(eval_cumulative_returns):
+                for step_index, cumulative_return in enumerate(episode_curve):
+                    eval_curve_rows.append(
+                        {
+                            "variant": variant.key,
+                            "label": variant.label,
+                            "seed": seed,
+                            "eval_episode": episode_index + 1,
+                            "step": step_index,
+                            "cumulative_return": float(cumulative_return),
+                        }
+                    )
 
             run_rows.append(
                 {
@@ -607,11 +864,11 @@ def main() -> None:
                 }
             )
             logger.info(
-                "Finished %s seed %s | mean_return_rate %.4f | annualized_sharpe %.4f",
+                "Finished %s seed %s | mean_return_rate %.4f | sharpe %.4f",
                 variant.label,
                 seed,
                 eval_metrics["mean_return_rate"],
-                eval_metrics["annualized_sharpe_ratio"],
+                eval_metrics["sharpe_ratio"],
             )
 
     runs_df = pd.DataFrame(run_rows)
@@ -631,6 +888,8 @@ def main() -> None:
                 "mean_reward_return_std": _std(variant_df["mean_reward_return"]),
                 "mean_return_rate_mean": _mean(variant_df["mean_return_rate"]),
                 "mean_return_rate_std": _std(variant_df["mean_return_rate"]),
+                "sharpe_ratio_mean": _mean(variant_df["sharpe_ratio"]),
+                "sharpe_ratio_std": _std(variant_df["sharpe_ratio"]),
                 "annualized_sharpe_ratio_mean": _mean(variant_df["annualized_sharpe_ratio"]),
                 "annualized_sharpe_ratio_std": _std(variant_df["annualized_sharpe_ratio"]),
                 "max_drawdown_mean": _mean(variant_df["max_drawdown"]),
@@ -648,6 +907,13 @@ def main() -> None:
         .rename(columns={"reward_return": "mean_reward_return"})
     )
     curve_summary_df.to_csv(output_root / "training_curve_summary.csv", index=False)
+    eval_curves_df = pd.DataFrame(eval_curve_rows)
+    eval_curve_summary_df = (
+        eval_curves_df.groupby(["variant", "label", "step"], as_index=False)["cumulative_return"]
+        .mean()
+        .rename(columns={"cumulative_return": "mean_cumulative_return"})
+    )
+    eval_curve_summary_df.to_csv(output_root / "eval_curve_summary.csv", index=False)
 
     labels = summary_df["label"].tolist()
     colors = summary_df["color"].tolist()
@@ -661,20 +927,35 @@ def main() -> None:
         colors=colors,
     )
     _build_bar_chart_svg(
-        figures_dir / "annualized_sharpe_ratio.svg",
-        title="AAPL Ablation: Annualized Sharpe Ratio",
-        y_label="Annualized Sharpe Ratio",
+        figures_dir / "mean_sharpe_ratio.svg",
+        title="AAPL Ablation: Mean Sharpe Ratio",
+        y_label="Mean Sharpe Ratio",
         labels=labels,
-        values=summary_df["annualized_sharpe_ratio_mean"].tolist(),
-        errors=summary_df["annualized_sharpe_ratio_std"].tolist(),
+        values=summary_df["sharpe_ratio_mean"].tolist(),
+        errors=summary_df["sharpe_ratio_std"].tolist(),
         colors=colors,
     )
     _build_line_chart_svg(
         figures_dir / "training_reward_curve.svg",
         title="AAPL Ablation: Training Reward Curve",
         y_label="Episode Reward",
+        x_label="Episode",
+        subtitle="Curves show mean training episode reward across seeds.",
         curve_df=curve_summary_df,
         variants=variants,
+        x_column="episode",
+        y_column="mean_reward_return",
+    )
+    _build_line_chart_svg(
+        figures_dir / "mean_cumulative_return_curve.svg",
+        title="AAPL Ablation: Mean Cumulative Return Curve",
+        y_label="Mean Cumulative Return",
+        x_label="Evaluation Step",
+        subtitle="Curves show mean evaluation cumulative return across seeds and fixed windows.",
+        curve_df=eval_curve_summary_df,
+        variants=variants,
+        x_column="step",
+        y_column="mean_cumulative_return",
     )
     _write_markdown_report(output_root, summary_df, args, variants)
     logger.info("Ablation results written to %s", output_root)

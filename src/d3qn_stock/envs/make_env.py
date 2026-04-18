@@ -96,6 +96,8 @@ def make_env(
     reward: str,
     window_size: int,
     device: str,
+    observation_mode: str = "raw",
+    include_account_features: bool = False,
     trading_period: Optional[int] = None,
     max_positions: Optional[int] = None,
     max_exposure_ratio: Optional[float] = 1.0,
@@ -124,6 +126,8 @@ def make_env(
         df,
         reward=reward,
         window_size=window_size,
+        observation_mode=observation_mode,
+        include_account_features=include_account_features,
         trading_period=trading_period,
         max_positions=max_positions,
         max_exposure_ratio=max_exposure_ratio,
@@ -150,5 +154,4 @@ def make_env(
         annualize_sr_reward=False,
         device=device,
     )
-    env.obs_dim = window_size
     return env

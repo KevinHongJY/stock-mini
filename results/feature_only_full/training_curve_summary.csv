@@ -1,0 +1,101 @@
+variant,label,episode,mean_reward_return
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,1,3.1666666145126023
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,2,19.833333306014538
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,3,6.9999999304612475
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,4,10.733333319425583
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,5,-8.800000006953875
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,6,4.26666665573915
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,7,25.83333329608043
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,8,-4.100000036259492
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,9,-3.7000000054637585
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,10,13.133333330353102
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,11,13.16666666418314
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,12,9.833333330849806
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,13,3.3333333333333335
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,14,-1.6666666666666667
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,15,3.3333333333333335
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,16,0.0
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,17,0.0
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,18,0.0
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,19,0.0
+d3qn_per_nstep_noisy_returns_account,D3QN+Noisy,20,-1.6666666666666667
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),1,-36.36666668703159
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),2,-0.13333333532015482
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),3,9.899999998509884
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),4,-0.866666679581007
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),5,-13.766666697959105
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),6,-10.600000033775965
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),7,-36.70000000049671
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),8,-11.80000002682209
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),9,-1.6666666666666667
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),10,1.5999999990065892
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),11,-0.033333333830038704
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),12,1.633333332836628
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),13,3.16666666418314
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),14,1.1999999682108555
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),15,-2.5000000124176345
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),16,-2.900000018378099
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),17,-15.533333366115889
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),18,6.633333332836628
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),19,6.799999977151553
+d3qn_per_nstep_returns_account,D3QN (+PER+3-step),20,-1.2000000427166622
+ddqn_returns_account,DDQN,1,-32.80000004172325
+ddqn_returns_account,DDQN,2,-12.00000007947286
+ddqn_returns_account,DDQN,3,-19.96666669100523
+ddqn_returns_account,DDQN,4,-37.80000004172325
+ddqn_returns_account,DDQN,5,-10.633333392441273
+ddqn_returns_account,DDQN,6,7.433333270251751
+ddqn_returns_account,DDQN,7,-21.866666719317436
+ddqn_returns_account,DDQN,8,8.133333255847296
+ddqn_returns_account,DDQN,9,1.7999999523162842
+ddqn_returns_account,DDQN,10,-40.53333334128062
+ddqn_returns_account,DDQN,11,-16.00000001490116
+ddqn_returns_account,DDQN,12,-22.500000037252903
+ddqn_returns_account,DDQN,13,13.699999955793222
+ddqn_returns_account,DDQN,14,31.266666635870934
+ddqn_returns_account,DDQN,15,11.833333310981592
+ddqn_returns_account,DDQN,16,-16.866666694482166
+ddqn_returns_account,DDQN,17,-4.533333376049995
+ddqn_returns_account,DDQN,18,-6.166666684051354
+ddqn_returns_account,DDQN,19,-2.8333333507180214
+ddqn_returns_account,DDQN,20,-2.766666683057944
+dqn_returns_account,DQN,1,-30.73333339393139
+dqn_returns_account,DQN,2,-67.76666680723429
+dqn_returns_account,DQN,3,-10.300000054140886
+dqn_returns_account,DQN,4,-6.366666736702125
+dqn_returns_account,DQN,5,-9.70000004520019
+dqn_returns_account,DQN,6,4.766666588683923
+dqn_returns_account,DQN,7,-0.866666704416275
+dqn_returns_account,DQN,8,-8.566666694978872
+dqn_returns_account,DQN,9,-8.466666718324026
+dqn_returns_account,DQN,10,-2.5000000372529043
+dqn_returns_account,DQN,11,2.9333332777023315
+dqn_returns_account,DQN,12,-6.666666716337204
+dqn_returns_account,DQN,13,6.566666640341282
+dqn_returns_account,DQN,14,3.2333333070079484
+dqn_returns_account,DQN,15,-1.133333350221316
+dqn_returns_account,DQN,16,47.63333332290252
+dqn_returns_account,DQN,17,74.89999999850988
+dqn_returns_account,DQN,18,45.76666665325562
+dqn_returns_account,DQN,19,201.13333332538605
+dqn_returns_account,DQN,20,95.86666665474574
+dueling_ddqn_returns_account,Duel DDQN,1,-15.700000084936619
+dueling_ddqn_returns_account,Duel DDQN,2,1.899999879300595
+dueling_ddqn_returns_account,Duel DDQN,3,9.466666559378302
+dueling_ddqn_returns_account,Duel DDQN,4,-0.033333358665307365
+dueling_ddqn_returns_account,Duel DDQN,5,34.33333327372869
+dueling_ddqn_returns_account,Duel DDQN,6,66.09999996672074
+dueling_ddqn_returns_account,Duel DDQN,7,101.86666664481163
+dueling_ddqn_returns_account,Duel DDQN,8,65.99999994039536
+dueling_ddqn_returns_account,Duel DDQN,9,64.09999998658895
+dueling_ddqn_returns_account,Duel DDQN,10,28.333333333333332
+dueling_ddqn_returns_account,Duel DDQN,11,111.03333329906066
+dueling_ddqn_returns_account,Duel DDQN,12,-44.43333334972461
+dueling_ddqn_returns_account,Duel DDQN,13,107.19999998311202
+dueling_ddqn_returns_account,Duel DDQN,14,4.133333295583725
+dueling_ddqn_returns_account,Duel DDQN,15,85.06666664282481
+dueling_ddqn_returns_account,Duel DDQN,16,109.29999998956919
+dueling_ddqn_returns_account,Duel DDQN,17,102.96666666120291
+dueling_ddqn_returns_account,Duel DDQN,18,58.09999999652306
+dueling_ddqn_returns_account,Duel DDQN,19,154.79999999701977
+dueling_ddqn_returns_account,Duel DDQN,20,113.33333330849807

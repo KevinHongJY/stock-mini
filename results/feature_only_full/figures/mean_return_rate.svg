@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#FAFAFA"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #1F2937; }
+.title { font-size: 24px; font-weight: 700; }
+.axis { font-size: 12px; }
+.label { font-size: 13px; font-weight: 600; }
+.small { font-size: 11px; fill: #4B5563; }
+</style>
+<text x="90" y="36" class="title">AAPL Ablation: Mean Return Rate</text>
+<text x="90" y="56" class="small">Bars show mean across seeds; whiskers show one standard deviation.</text>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#374151" stroke-width="1.5"/>
+<line x1="90" y1="375.20" x2="950" y2="375.20" stroke="#9CA3AF" stroke-width="1.2"/>
+<line x1="84" y1="440.00" x2="950" y2="440.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="444.00" text-anchor="end" class="axis">-0.07</text>
+<line x1="84" y1="366.00" x2="950" y2="366.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="370.00" text-anchor="end" class="axis">0.01</text>
+<line x1="84" y1="292.00" x2="950" y2="292.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="296.00" text-anchor="end" class="axis">0.08</text>
+<line x1="84" y1="218.00" x2="950" y2="218.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="222.00" text-anchor="end" class="axis">0.16</text>
+<line x1="84" y1="144.00" x2="950" y2="144.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="148.00" text-anchor="end" class="axis">0.23</text>
+<line x1="84" y1="70.00" x2="950" y2="70.00" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="74.00" text-anchor="end" class="axis">0.31</text>
+<rect x="131.00" y="295.24" width="90.00" height="79.96" fill="#4E79A7" rx="6"/>
+<line x1="176.00" y1="181.31" x2="176.00" y2="409.17" stroke="#111827" stroke-width="1.5"/>
+<line x1="166.00" y1="181.31" x2="186.00" y2="181.31" stroke="#111827" stroke-width="1.5"/>
+<line x1="166.00" y1="409.17" x2="186.00" y2="409.17" stroke="#111827" stroke-width="1.5"/>
+<text x="176.00" y="462" text-anchor="middle" class="label">DQN</text>
+<text x="176.00" y="287.24" text-anchor="middle" class="small">0.081</text>
+<rect x="303.00" y="253.35" width="90.00" height="121.85" fill="#F28E2B" rx="6"/>
+<line x1="348.00" y1="153.54" x2="348.00" y2="353.16" stroke="#111827" stroke-width="1.5"/>
+<line x1="338.00" y1="153.54" x2="358.00" y2="153.54" stroke="#111827" stroke-width="1.5"/>
+<line x1="338.00" y1="353.16" x2="358.00" y2="353.16" stroke="#111827" stroke-width="1.5"/>
+<text x="348.00" y="462" text-anchor="middle" class="label">DDQN</text>
+<text x="348.00" y="245.35" text-anchor="middle" class="small">0.123</text>
+<rect x="475.00" y="295.29" width="90.00" height="79.91" fill="#59A14F" rx="6"/>
+<line x1="520.00" y1="181.43" x2="520.00" y2="409.15" stroke="#111827" stroke-width="1.5"/>
+<line x1="510.00" y1="181.43" x2="530.00" y2="181.43" stroke="#111827" stroke-width="1.5"/>
+<line x1="510.00" y1="409.15" x2="530.00" y2="409.15" stroke="#111827" stroke-width="1.5"/>
+<text x="520.00" y="462" text-anchor="middle" class="label">Duel DDQN</text>
+<text x="520.00" y="287.29" text-anchor="middle" class="small">0.081</text>
+<rect x="647.00" y="254.26" width="90.00" height="120.94" fill="#FF9D9A" rx="6"/>
+<line x1="692.00" y1="155.84" x2="692.00" y2="352.68" stroke="#111827" stroke-width="1.5"/>
+<line x1="682.00" y1="155.84" x2="702.00" y2="155.84" stroke="#111827" stroke-width="1.5"/>
+<line x1="682.00" y1="352.68" x2="702.00" y2="352.68" stroke="#111827" stroke-width="1.5"/>
+<text x="692.00" y="462" text-anchor="middle" class="label">D3QN (+PER+3-step)</text>
+<text x="692.00" y="246.26" text-anchor="middle" class="small">0.122</text>
+<rect x="819.00" y="214.48" width="90.00" height="160.72" fill="#A0CBE8" rx="6"/>
+<line x1="864.00" y1="100.83" x2="864.00" y2="328.13" stroke="#111827" stroke-width="1.5"/>
+<line x1="854.00" y1="100.83" x2="874.00" y2="100.83" stroke="#111827" stroke-width="1.5"/>
+<line x1="854.00" y1="328.13" x2="874.00" y2="328.13" stroke="#111827" stroke-width="1.5"/>
+<text x="864.00" y="462" text-anchor="middle" class="label">D3QN+Noisy</text>
+<text x="864.00" y="206.48" text-anchor="middle" class="small">0.162</text>
+<text x="24" y="255.00" transform="rotate(-90 24,255.00)" class="label">Mean Return Rate</text>
+</svg>

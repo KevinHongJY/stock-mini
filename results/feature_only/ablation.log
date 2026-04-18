@@ -1,0 +1,19 @@
+2026-04-17 17:57:29 | INFO | Training Dueling DDQN (returns + account) with seed 7
+2026-04-17 17:57:39 | INFO | Finished Dueling DDQN (returns + account) seed 7 | mean_return_rate 0.2428 | annualized_sharpe 14.8064
+2026-04-17 17:57:39 | INFO | Training Dueling DDQN (returns + account) with seed 21
+2026-04-17 17:57:48 | INFO | Finished Dueling DDQN (returns + account) seed 21 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:57:48 | INFO | Training Dueling DDQN (returns + account) with seed 42
+2026-04-17 17:57:56 | INFO | Finished Dueling DDQN (returns + account) seed 42 | mean_return_rate -0.0012 | annualized_sharpe -1.5549
+2026-04-17 17:57:56 | INFO | Training D3QN + PER + 3-step (returns + account) with seed 7
+2026-04-17 17:58:06 | INFO | Finished D3QN + PER + 3-step (returns + account) seed 7 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:58:06 | INFO | Training D3QN + PER + 3-step (returns + account) with seed 21
+2026-04-17 17:58:15 | INFO | Finished D3QN + PER + 3-step (returns + account) seed 21 | mean_return_rate 0.1227 | annualized_sharpe 14.7220
+2026-04-17 17:58:15 | INFO | Training D3QN + PER + 3-step (returns + account) with seed 42
+2026-04-17 17:58:25 | INFO | Finished D3QN + PER + 3-step (returns + account) seed 42 | mean_return_rate 0.2430 | annualized_sharpe 14.4129
+2026-04-17 17:58:25 | INFO | Training Noisy Full (returns + account) with seed 7
+2026-04-17 17:58:39 | INFO | Finished Noisy Full (returns + account) seed 7 | mean_return_rate 0.2125 | annualized_sharpe 13.4826
+2026-04-17 17:58:39 | INFO | Training Noisy Full (returns + account) with seed 21
+2026-04-17 17:58:54 | INFO | Finished Noisy Full (returns + account) seed 21 | mean_return_rate 0.2439 | annualized_sharpe 14.4974
+2026-04-17 17:58:54 | INFO | Training Noisy Full (returns + account) with seed 42
+2026-04-17 17:59:09 | INFO | Finished Noisy Full (returns + account) seed 42 | mean_return_rate -0.0000 | annualized_sharpe 0.0000
+2026-04-17 17:59:09 | INFO | Ablation results written to results/feature_only
